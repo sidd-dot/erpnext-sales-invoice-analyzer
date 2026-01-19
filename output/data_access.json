@@ -1,0 +1,1217 @@
+[
+  {
+    "function": "onload",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_fixed_asset",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_submit",
+    "call": "frappe.get_cached_doc('Authorization Control').validate_approving_authority",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_submit",
+    "call": "frappe.get_cached_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_submit",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_submit",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_if_consolidated_invoice",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_if_created_using_pos_and_pos_closing_entry_generated",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_cancel",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "on_cancel",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_credit_limit",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "unlink_sales_invoice_from_timesheets",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_missing_values",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_missing_values",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "reset_mode_of_payments",
+    "call": "frappe.get_cached_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_time_sheet",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_time_sheets_are_submitted",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_time_sheets_are_submitted",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_pos_fields",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_pos_fields",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_pos_fields",
+    "call": "frappe.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_pos_fields",
+    "call": "frappe.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_pos_fields",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_company_abbr",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_debit_to_acc",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "clear_unallocated_mode_of_payments",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_with_previous_doc",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "force_set_against_income_account",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "so_dn_required",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "so_dn_required",
+    "call": "frappe.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_proj_cust",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_created_using_pos",
+    "call": "frappe.db.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_full_payment",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_pos_opening_entry",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_warehouse",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_subcontracted_sales_order",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_write_off_account",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_billing_hours_and_amount",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "is_auto_fetch_timesheet_enabled",
+    "call": "frappe.db.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_warehouse",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_warehouse",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_prev_docstatus",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_prev_docstatus",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_asset_qty",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "depreciate_asset_on_sale",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "restore_asset",
+    "call": "frappe.get_cached_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "_update_asset",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": null,
+    "call": "frappe.get_cached_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_disposal_date",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_tax_gl_entries",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_item_gl_entries",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_gl_entries_for_fixed_asset",
+    "call": "frappe.get_cached_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "enable_discount_accounting",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_pos_gl_entries",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_write_off_gl_entry",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_billing_status_in_dn",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_billing_status_in_dn",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_billing_status_in_dn",
+    "call": "frappe.get_doc('Delivery Note', dn).update_billing_percentage",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_billing_status_in_dn",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_project",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_loyalty_point_entry",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "delete_loyalty_point_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "delete_loyalty_point_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "delete_loyalty_point_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_loyalty_program_tier",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "apply_loyalty_points",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "set_status",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "is_subcontracted",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_discounting_status",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_party",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_party",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_party",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_party",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_party",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_linked_doc",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "unlink_inter_company_doc",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "unlink_inter_company_doc",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_bank_cash_account",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_inter_company_details",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_inter_company_details",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_inter_company_details",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_inter_company_details",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_internal_party",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_transaction",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "validate_inter_company_transaction",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_inter_company_transaction",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "make_inter_company_transaction",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "_validate_address_link",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": null,
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": null,
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_received_items",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_received_items",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_pi_items",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "update_pr_items",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_delivery_note_details",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_sales_invoice_details",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_pd_details",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_loyalty_programs",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "create_invoice_discounting",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_all_mode_of_payments",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_mode_of_payments_info",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "get_mode_of_payment_info",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "postprocess_dunning",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "postprocess_dunning",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "call": "frappe.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "call": "frappe.db.sql_list",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "function": "setUp",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "setUp",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "setUp",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "tearDown",
+    "call": "frappe.db.rollback",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_timestamp_change",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_payment_entry_unlink_against_invoice",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_discount_amount_gl_entry",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_discount_amount_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_discount_amount_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_calculation_export_currency_with_tax_inclusive_price",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_payment",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_payment",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_payment",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_gl_entry_without_perpetual_inventory",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_gl_entry_without_perpetual_inventory",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_ledger_entries_of_return_pos_invoice",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_pos_with_no_gl_entry_for_change_amount",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_pos_with_no_gl_entry_for_change_amount",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "validate_pos_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "validate_pos_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "validate_pos_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "validate_pos_gl_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_bin_details_of_packed_item",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_bin_details_of_packed_item",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_gl_entry_with_perpetual_inventory_no_item_code",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_gl_entry_with_perpetual_inventory_non_stock_item",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_with_advance",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_with_advance",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_serialized",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_serialized_cancel",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_return_sales_invoice",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gle_made_when_asset_is_returned",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gle_made_when_asset_is_returned",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gle_made_when_asset_is_returned",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_incoming_rate_for_stand_alone_credit_note",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_incoming_rate_for_stand_alone_credit_note",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multi_currency_gle",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multi_currency_gle",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gle_in_transaction_currency",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_outstanding_amount_after_advance_jv_cancellation",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_outstanding_amount_after_advance_payment_entry_cancellation",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multiple_uom_in_selling",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_company_monthly_sales",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_company_monthly_sales",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_company_monthly_sales",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment_2",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment_2",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment_3",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment_3",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_rounding_adjustment_3",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_credit_note",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_with_cost_center",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_with_project_link",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_without_cost_center",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_deferred_revenue",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_fixed_deferred_revenue",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "_validate_address_link",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_inter_company_transaction_without_default_warehouse",
+    "call": "frappe.db.get_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_inter_company_transaction_without_default_warehouse",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_inter_company_transaction_without_default_warehouse",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_inter_company_transaction_without_default_warehouse",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sle_for_target_warehouse",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_internal_transfer_gl_precision_issues",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_internal_transfer_gl_precision_issues",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_additional_discount_for_sales_invoice_with_discount_accounting_enabled",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "call": "frappe.db.set_single_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_commission",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_commission",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_submission_post_account_freezing_date",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_submission_post_account_freezing_date",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multi_currency_deferred_revenue_via_journal_entry",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multi_currency_deferred_revenue_via_journal_entry",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_multi_currency_deferred_revenue_via_journal_entry",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_with_disabled_account",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gain_loss_with_advance_entry",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gain_loss_with_advance_entry",
+    "call": "frappe.get_cached_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gain_loss_with_advance_entry",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_batch_expiry_for_sales_invoice_return",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_without_customer_group_and_territory",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_without_customer_group_and_territory",
+    "call": "frappe.get_doc(customer_dict).insert",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_sales_invoice_without_customer_group_and_territory",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_partial_allocation_on_advance_as_liability",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_loyalty_points_redemption_with_shopping_cart",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_loyalty_points_redemption_with_shopping_cart",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_loyalty_points_redemption_with_shopping_cart",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "_create_opening_roundoff_account",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "_create_opening_roundoff_account",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "_create_opening_roundoff_account",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "_create_opening_roundoff_account",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_opening_invoice_with_rounding_adjustment",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_ledger_entries_on_opening_invoice_with_rounding_loss_by_inclusive_tax",
+    "call": "frappe.db.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_foreign_currency_jv",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_foreign_currency_jv",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_foreign_currency_jv",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_different_currency_in_debtor_and_creditor",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_different_currency_in_debtor_and_creditor",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_common_party_with_different_currency_in_debtor_and_creditor",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gl_voucher_subtype",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_gl_voucher_subtype",
+    "call": "frappe.get_all",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_total_billed_amount",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_pos_sales_invoice_creation_during_pos_invoice_mode",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_stand_alone_credit_note_valuation",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_stand_alone_credit_note_zero_valuation",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_non_batchwise_valuation_for_moving_average",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_non_batchwise_valuation_for_moving_average",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "test_non_batchwise_valuation_for_moving_average",
+    "call": "frappe.db.get_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "set_advance_flag",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "get_outstanding_amount",
+    "call": "frappe.db.sql",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "create_internal_parties",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "create_internal_supplier",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "create_internal_supplier",
+    "call": "frappe.get_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "create_internal_supplier",
+    "call": "frappe.db.exists",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "function": "setup_accounts",
+    "call": "frappe.db.set_value",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  }
+]

@@ -1,0 +1,1709 @@
+[
+  {
+    "type": "class",
+    "name": "PartialPaymentValidationError",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "class",
+    "name": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "__init__",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_indicator",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "onload",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_accounts",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_for_repost",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_fixed_asset",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_item_cost_centers",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_income_account",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "before_save",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "before_submit",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "on_submit",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_return",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_paid_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_if_consolidated_invoice",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_if_created_using_pos_and_pos_closing_entry_generated",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "before_cancel",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "on_cancel",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_status_updater_args",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_credit_limit",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "unlink_sales_invoice_from_timesheets",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "reset_mode_of_payments",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_time_sheet",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_billed_qty_in_scio",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_time_sheet_detail",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "on_update_after_submit",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_paid_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_account_for_mode_of_payment",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_time_sheets_are_submitted",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_pos_fields",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_company_abbr",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_debit_to_acc",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "clear_unallocated_mode_of_payments",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_with_previous_doc",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_against_income_account",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "force_set_against_income_account",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "add_remarks",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_auto_set_posting_time",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "so_dn_required",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_proj_cust",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_pos",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_created_using_pos",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_full_payment",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_opening_entry",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_warehouse",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_delivery_note",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "allow_write_off_only_on_pos",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_subcontracted_sales_order",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_scio_self_rm_qty",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_write_off_account",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_account_for_change_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_dropship_item",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_current_stock",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_packing_list",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_billing_hours_and_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_timesheet_billing_for_project",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "is_auto_fetch_timesheet_enabled",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "add_timesheet_data",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "calculate_billing_amount_for_timesheet",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "timesheet_sum",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_warehouse",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_income_account_for_fixed_assets",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_prev_docstatus",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "split_asset_based_on_sale_qty",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_asset_qty",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "process_asset_depreciation",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "depreciate_asset_on_sale",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_note_for_asset_sale",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "restore_asset",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_note_for_asset_return",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_asset",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_update_asset",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_disposal_date",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_customer_gl_entry",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_tax_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_internal_transfer_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_item_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_gl_entries_for_fixed_asset",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "enable_discount_accounting",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_loyalty_point_redemption_gle",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_pos_gl_entries",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_gle_for_change_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_write_off_gl_entry",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_gle_for_rounding_adjustment",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_billing_status_in_dn",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "on_recurring",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_project",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "verify_payment_amount_is_positive",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "verify_payment_amount_is_negative",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_loyalty_point_entry",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "delete_loyalty_point_entry",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_loyalty_program_tier",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_returned_amount",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "apply_loyalty_points",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_status",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "is_subcontracted",
+    "class": "SalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_total_in_party_account_currency",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "is_overdue",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_discounting_status",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_inter_company_party",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_linked_doc",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "unlink_inter_company_doc",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_list_context",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_bank_cash_account",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_maintenance_schedule",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_delivery_note",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_item",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_sales_return",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_inter_company_details",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_internal_party",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_inter_company_transaction",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_inter_company_purchase_invoice",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_regional_gl_entries",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_inter_company_transaction",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_details",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_validate_address_link",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_item",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_received_items",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_purchase_references",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_pi_items",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_pr_items",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_delivery_note_details",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_sales_invoice_details",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_pd_details",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_taxes",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_address",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_loyalty_programs",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_invoice_discounting",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "update_multi_mode_option",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "append_payment",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_all_mode_of_payments",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_mode_of_payments_info",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_mode_of_payment_info",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_dunning",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "postprocess_dunning",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_if_return_invoice_linked_with_payment_entry",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_data",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice_dashboard.py"
+  },
+  {
+    "type": "class",
+    "name": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "setUp",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_invalid_rate_without_override",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "tearDown",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "setUpClass",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "tearDownClass",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_qty",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_timestamp_change",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_change_naming_series",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_add_terms_after_save",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_base_currency",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_payment_entry_unlink_against_invoice",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_payment_entry_unlink_against_standalone_credit_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_export_currency",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_discount_and_inclusive_tax",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_discount_amount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_discount_amount_gl_entry",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_multiple_items",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_item_tax_template",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_multiple_items_and_discount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_inclusive_rate_validations",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_base_currency_with_tax_inclusive_price",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_export_currency_with_tax_inclusive_price",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_rounded_total_with_cash_discount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_payment",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_on_cost_center_allocation",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_without_perpetual_inventory",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_gl_entry_with_perpetual_inventory",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_with_repayment",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_change_amount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_auto_write_off_amount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_ledger_entries_of_return_pos_invoice",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_with_no_gl_entry_for_change_amount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_gl_entry",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_bin_details_of_packed_item",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_si_without_payment",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_with_perpetual_inventory_no_item_code",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_with_perpetual_inventory_non_stock_item",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_insert_purchase_receipt",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_insert_delivery_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_advance",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_serialized",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_serialized_cancel",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_serial_numbers_against_delivery_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_return_sales_invoice",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_zero_qty_return_invoice_with_stock_effect",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_return_invoice_with_account_mismatch",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_gle_made_when_asset_is_returned",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_incoming_rate_for_stand_alone_credit_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_discount_on_net_total",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_multi_currency_gle",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_gle_in_transaction_currency",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_invalid_currency",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_create_so_with_margin",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_amount_after_advance_jv_cancellation",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_amount_after_advance_payment_entry_cancellation",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_multiple_uom_in_selling",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_item_wise_tax_breakup",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_si_to_test_tax_breakup",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_company_monthly_sales",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment_2",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment_3",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_shipping_rule",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_create_invoice_without_terms",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_duplicate_due_date_in_terms",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_credit_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_cost_center",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_project_link",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_without_cost_center",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_deferred_revenue",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_deferred_revenue_missing_account",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_fixed_deferred_revenue",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_validate_inter_company_transaction_address_links",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_validate_address_link",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_inter_company_transaction",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_inter_company_transaction_without_default_warehouse",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sle_for_target_warehouse",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_internal_transfer_gl_entry",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_internal_transfer_gl_precision_issues",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_item_tax_net_range",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_discount_accounting_enabled",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_additional_discount_for_sales_invoice_with_discount_accounting_enabled",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_asset_depreciation_on_sale_with_pro_rata",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_asset_depreciation_on_sale_without_pro_rata",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_against_supplier",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_payment_statuses",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_update_invoice_status",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_commission",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_submission_post_account_freezing_date",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_over_billing_case_against_delivery_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_multi_currency_deferred_revenue_via_journal_entry",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_standalone_serial_no_return",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_disabled_account",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_gain_loss_with_advance_entry",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_batch_expiry_for_sales_invoice_return",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_payable_tax_account",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_advance_entries_as_liability",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_without_customer_group_and_territory",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_sales_return_negative_rate",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_partial_allocation_on_advance_as_liability",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_loyalty_points_redemption_with_shopping_cart",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pulling_advance_based_on_debit_to",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_taxes_merging_from_delivery_note",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_without_update_outstanding_for_self",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_validation_on_opening_invoice_with_rounding",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_create_opening_roundoff_account",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_opening_invoice_with_rounding_adjustment",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "_create_opening_invoice_with_inclusive_tax",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_validation_for_opening_with_inclusive_tax",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_ledger_entries_on_opening_invoice_with_rounding_loss_by_inclusive_tax",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_common_party_with_foreign_currency_jv",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_common_party_with_different_currency_in_debtor_and_creditor",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_invoice_remarks",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_gl_voucher_subtype",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_total_billed_amount",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_total_billed_amount_with_different_projects",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_with_party_account_currency",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_create_return_invoice_for_self_update",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_prevents_fully_returned_invoice_with_zero_quantity",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_pos_sales_invoice_creation_during_pos_invoice_mode",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_stand_alone_credit_note_valuation",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_stand_alone_credit_note_zero_valuation",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_system_generated_exchange_gain_or_loss_je_after_repost",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "test_non_batchwise_valuation_for_moving_average",
+    "class": "TestSalesInvoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "make_item_for_si",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "set_advance_flag",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "check_gl_entries",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_sales_invoice",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_sales_invoice_against_cost_center",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_outstanding_amount",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "get_taxes_and_charges",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_internal_parties",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "create_internal_supplier",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "setup_accounts",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "function",
+    "name": "add_taxes",
+    "class": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  }
+]

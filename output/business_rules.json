@@ -1,0 +1,2009 @@
+[
+  {
+    "type": "conditional",
+    "condition": "TYPE_CHECKING",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.outstanding_amount < 0",
+    "function": "set_indicator",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.outstanding_amount > 0 and getdate(self.due_date) >= getdate(nowdate())",
+    "function": "set_indicator",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.outstanding_amount > 0 and getdate(self.due_date) < getdate(nowdate())",
+    "function": "set_indicator",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_return) == 1",
+    "function": "set_indicator",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.customer",
+    "function": "onload",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not (self.is_pos or self.is_debit_note)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.coupon_code",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_pos)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_created_using_pos)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.update_stock)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "is_deferred_invoice",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_opening",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and (not self.return_against) and self.timesheets",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "row.billing_hours",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "row.billing_amount",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_pos and (not self.is_return)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_pos and self.is_return",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.redeem_loyalty_points and self.loyalty_points and (not self.is_consolidated)",
+    "function": "validate",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_accounts",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_for_repost",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.doctype != 'Sales Invoice'",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.is_fixed_asset",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.asset",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.update_stock",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "asset_status in ('Scrapped', 'Cancelled', 'Capitalized')",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "asset_status == 'Sold' and (not self.is_return)",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.return_against",
+    "function": "validate_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_item_cost_centers",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_income_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.auto_repeat",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and (not self.update_billed_amount_in_sales_order)",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.update_stock == 1",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.get(table_name)",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.update_stock == 1",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_pos) != 1 and (not self.is_return)",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.get_single_value('Selling Settings', 'sales_update_frequency') == 'Each Transaction'",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.coupon_code",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return and (not self.is_consolidated) and self.loyalty_program and (not self.dont_create_loyalty_points)",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against and (not self.is_consolidated) and self.loyalty_program",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.redeem_loyalty_points and (not self.is_consolidated) and self.loyalty_points",
+    "function": "on_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_pos_return",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_consolidated",
+    "function": "validate_pos_return",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_pos and self.is_return",
+    "function": "validate_pos_return",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "total_amount_in_payments < invoice_total",
+    "function": "validate_pos_return",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_pos_paid_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "len(self.payments) == 0 and self.is_pos and (flt(self.grand_total) > 0)",
+    "function": "validate_pos_paid_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.doctype == 'Sales Invoice' and self.is_consolidated",
+    "function": "check_if_consolidated_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos_closing_entry and pos_closing_entry[0]",
+    "function": "check_if_consolidated_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.doctype == 'Sales Invoice' and self.is_created_using_pos and self.pos_closing_entry",
+    "function": "check_if_created_using_pos_and_pos_closing_entry_generated",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos_closing_entry_docstatus == 1",
+    "function": "check_if_created_using_pos_and_pos_closing_entry_generated",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and (not self.update_billed_amount_in_sales_order)",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.update_stock == 1",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.update_stock == 1",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.coupon_code",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.get_single_value('Selling Settings', 'sales_update_frequency') == 'Each Transaction'",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return and (not self.is_consolidated) and self.loyalty_program",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against and (not self.is_consolidated) and self.loyalty_program",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.doctype == 'Sales Invoice' and self.is_pos and self.is_return and self.is_created_using_pos and (not self.pos_closing_entry)",
+    "function": "on_cancel",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not cint(self.update_stock)",
+    "function": "update_status_updater_args",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not cint(self.is_return)",
+    "function": "update_status_updater_args",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "bypass_credit_limit_check_at_sales_order",
+    "function": "check_credit_limit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not (d.sales_order or d.delivery_note)",
+    "function": "check_credit_limit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "validate_against_credit_limit",
+    "function": "check_credit_limit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos_invoices",
+    "function": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.debit_to",
+    "function": "set_missing_values",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.due_date and self.customer",
+    "function": "set_missing_values",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not print_format and (not cint(frappe.db.get_value('Print Format', 'POS Invoice', 'disabled')))",
+    "function": "set_missing_values",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos",
+    "function": "set_missing_values",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.pos_profile",
+    "function": "reset_mode_of_payments",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.time_sheet",
+    "function": "update_time_sheet",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "update_billed_qty_in_scio",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "data",
+    "function": "update_billed_qty_in_scio",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.project and args.timesheet_detail == data.name or (not self.project and (not data.sales_invoice) and (args.timesheet_detail == data.name)) or (not sales_invoice and data.sales_invoice == self.name and (args.timesheet_detail == data.name)) or (self.is_return and self.return_against and data.sales_invoice and (data.sales_invoice == self.return_against) and (not sales_invoice) and (args.timesheet_detail == data.name))",
+    "function": "update_time_sheet_detail",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.needs_repost",
+    "function": "on_update_after_submit",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_time_sheets_are_submitted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "data.time_sheet and data.timesheet_detail",
+    "function": "validate_time_sheets_are_submitted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "(sales_invoice := frappe.db.get_value('Timesheet Detail', data.timesheet_detail, 'sales_invoice'))",
+    "function": "validate_time_sheets_are_submitted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "data.time_sheet",
+    "function": "validate_time_sheets_are_submitted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "status not in ['Submitted', 'Payslip', 'Partially Billed']",
+    "function": "validate_time_sheets_are_submitted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_pos) != 1",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.account_for_change_amount",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.pos_profile and (not self.flags.ignore_pos_profile)",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not pos_profile",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.pos_profile",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.get('payments') and (not for_validate)",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate and (not self.customer)",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos.get('account_for_change_amount')",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate or (for_validate and (not self.get(fieldname)))",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "pos.get('company_address')",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.customer",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "selling_price_list",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "item.get('item_code')",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not for_validate or (for_validate and (not item.get(fname)))",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.tc_name and (not self.terms)",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.taxes_and_charges and (not len(self.get('taxes')))",
+    "function": "set_pos_fields",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.debit_to",
+    "function": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.debit_to",
+    "function": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not account",
+    "function": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "account.report_type != 'Balance Sheet'",
+    "function": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.customer and account.account_type != 'Receivable'",
+    "function": "validate_debit_to_acc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_with_previous_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(frappe.get_single_value('Selling Settings', 'maintain_same_sales_rate')) and (not self.is_return) and (not self.is_internal_customer)",
+    "function": "validate_with_previous_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.income_account and d.income_account not in against_acc",
+    "function": "set_against_income_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.remarks",
+    "function": "add_remarks",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.po_no",
+    "function": "add_remarks",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.po_date",
+    "function": "add_remarks",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_auto_set_posting_time",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_new() and self.amended_from",
+    "function": "validate_auto_set_posting_time",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "so_dn_required",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.get_single_value('Selling Settings', value[0]) == 'Yes'",
+    "function": "so_dn_required",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.get_value('Customer', self.customer, value[0])",
+    "function": "so_dn_required",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.item_code and (not d.get(key.lower().replace(' ', '_'))) and (not self.get(value[1]))",
+    "function": "so_dn_required",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_proj_cust",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.project and self.customer",
+    "function": "validate_proj_cust",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not res",
+    "function": "validate_proj_cust",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "validate_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "abs(flt(self.paid_amount)) + abs(flt(self.write_off_amount)) - abs(flt(invoice_total)) > 1.0 / 10.0 ** (self.precision('grand_total') + 1.0)",
+    "function": "validate_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_created_using_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_created_using_pos and (not self.pos_profile)",
+    "function": "validate_created_using_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.invoice_type_in_pos == 'POS Invoice' and (not self.is_return)",
+    "function": "validate_created_using_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_full_payment",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 1 and (not self.is_return) and (not allow_partial_payment) and (self.paid_amount < invoice_total)",
+    "function": "validate_full_payment",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_pos_opening_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not opening_entries",
+    "function": "validate_pos_opening_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "len(opening_entries) > 1",
+    "function": "validate_pos_opening_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.utils.get_date_str(opening_entries[0].get('period_start_date')) != frappe.utils.today()",
+    "function": "validate_pos_opening_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_warehouse",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not d.warehouse and d.item_code and frappe.get_cached_value('Item', d.item_code, 'is_stock_item')",
+    "function": "validate_warehouse",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_delivery_note",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not cint(self.update_stock)",
+    "function": "validate_delivery_note",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "notes",
+    "function": "validate_delivery_note",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_pos and self.write_off_account",
+    "function": "allow_write_off_only_on_pos",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_subcontracted_sales_order",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.has_subcontracted",
+    "function": "validate_subcontracted_sales_order",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "[item for item in self.items if not item.sales_order and (not item.scio_detail)]",
+    "function": "validate_subcontracted_sales_order",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not all(frappe.get_all('Sales Order', {'name': ['in', [item.sales_order for item in self.items if item.sales_order]]}, pluck='is_subcontracted'))",
+    "function": "validate_subcontracted_sales_order",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_scio_self_rm_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self_rms",
+    "function": "validate_scio_self_rm_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "item.stock_qty > max_qty",
+    "function": "validate_scio_self_rm_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_write_off_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(self.write_off_amount) and (not self.write_off_account)",
+    "function": "validate_write_off_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(self.write_off_amount) and (not self.write_off_account)",
+    "function": "validate_write_off_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_account_for_change_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(self.change_amount) and (not self.account_for_change_amount)",
+    "function": "validate_account_for_change_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_dropship_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not cint(self.update_stock)",
+    "function": "validate_dropship_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "any((item.delivered_by_supplier for item in self.items))",
+    "function": "validate_dropship_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.update_stock) == 1",
+    "function": "update_packing_list",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.project",
+    "function": "set_billing_hours_and_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not timesheet.billing_hours and ts_doc.total_billable_hours",
+    "function": "set_billing_hours_and_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not timesheet.billing_amount and ts_doc.total_billable_amount",
+    "function": "set_billing_hours_and_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.is_return and (not self.timesheets) and self.project and self.is_auto_fetch_timesheet_enabled()",
+    "function": "update_timesheet_billing_for_project",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.project",
+    "function": "add_timesheet_data",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not warehouse",
+    "function": "get_warehouse",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "global_pos_profile",
+    "function": "get_warehouse",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not user_pos_profile",
+    "function": "get_warehouse",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.sales_order and frappe.db.get_value('Sales Order', d.sales_order, 'docstatus', cache=True) != 1",
+    "function": "check_prev_docstatus",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.delivery_note and frappe.db.get_value('Delivery Note', d.delivery_note, 'docstatus', cache=True) != 1",
+    "function": "check_prev_docstatus",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "qty['actual_qty'] < qty['sale_qty']",
+    "function": "split_asset_based_on_sale_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "remaining_qty > 0",
+    "function": "split_asset_based_on_sale_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not assets or self.is_return",
+    "function": "get_asset_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "row.is_fixed_asset and row.asset",
+    "function": "get_asset_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "row.asset in asset_qty_map.keys()",
+    "function": "get_asset_qty",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.docstatus == 2 or (not self.is_return and self.docstatus == 1)",
+    "function": "process_asset_depreciation",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.asset",
+    "function": "depreciate_asset_on_sale",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "asset.calculate_depreciation and asset.status != 'Fully Depreciated'",
+    "function": "depreciate_asset_on_sale",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.asset",
+    "function": "restore_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "asset.calculate_depreciation",
+    "function": "restore_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "get_note_for_asset_return",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.asset",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.docstatus == 1 or (not self.is_return and self.docstatus == 2)",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "get_disposal_date",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not gl_entries",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "gl_entries",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 1",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 2",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "update_outstanding == 'No'",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 2 and cint(self.update_stock) and cint(auto_accounting_for_stock)",
+    "function": "make_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "grand_total and (not self.is_internal_transfer())",
+    "function": "make_customer_gl_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against and (not self.update_outstanding_for_self)",
+    "function": "make_customer_gl_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(tax.base_tax_amount_after_discount_amount)",
+    "function": "make_tax_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_internal_transfer() and flt(self.base_total_taxes_and_charges)",
+    "function": "make_internal_transfer_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(item.base_net_amount, item.precision('base_net_amount')) or item.is_fixed_asset or enable_discount_accounting",
+    "function": "make_item_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_internal_transfer()",
+    "function": "make_item_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "item.is_fixed_asset and item.asset",
+    "function": "make_item_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.update_stock) and erpnext.is_perpetual_inventory_enabled(self.company)",
+    "function": "make_item_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return",
+    "function": "get_gl_entries_for_fixed_asset",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not hasattr(self, '_enable_discount_accounting')",
+    "function": "enable_discount_accounting",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.redeem_loyalty_points and self.loyalty_points and (not self.is_consolidated))",
+    "function": "make_loyalty_point_redemption_gle",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "cint(self.is_pos)",
+    "function": "make_pos_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "skip_change_gl_entries and payment_mode.account == self.account_for_change_amount",
+    "function": "make_pos_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against and (not self.update_outstanding_for_self)",
+    "function": "make_pos_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "payment_mode.base_amount",
+    "function": "make_pos_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not skip_change_gl_entries",
+    "function": "make_pos_gl_entries",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.change_amount",
+    "function": "get_gle_for_change_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.account_for_change_amount",
+    "function": "get_gle_for_change_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_pos and self.write_off_account and flt(self.write_off_amount, self.precision('write_off_amount'))",
+    "function": "make_write_off_gl_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "flt(self.rounding_adjustment, self.precision('rounding_adjustment')) and self.base_rounding_adjustment and (not self.is_internal_transfer())",
+    "function": "make_gle_for_rounding_adjustment",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_opening == 'Yes' and self.rounding_adjustment",
+    "function": "make_gle_for_rounding_adjustment",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not round_off_for_opening",
+    "function": "make_gle_for_rounding_adjustment",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and (not self.update_billed_amount_in_delivery_note)",
+    "function": "update_billing_status_in_dn",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.dn_detail",
+    "function": "update_billing_status_in_dn",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.so_detail",
+    "function": "update_billing_status_in_dn",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.project and self.project not in unique_projects",
+    "function": "update_project",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "entry.amount < 0",
+    "function": "verify_payment_amount_is_positive",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "entry.amount > 0",
+    "function": "verify_payment_amount_is_negative",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "lp_details and getdate(lp_details.from_date) <= getdate(self.posting_date) and (not lp_details.to_date or getdate(lp_details.to_date) >= getdate(self.posting_date))",
+    "function": "make_loyalty_point_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not lp_entry",
+    "function": "delete_loyalty_point_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "against_lp_entry",
+    "function": "delete_loyalty_point_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "lp_entry.invoice_type != self.doctype or lp_entry.invoice == self.name",
+    "function": "apply_loyalty_points",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "available_points > points_to_redeem",
+    "function": "apply_loyalty_points",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "points_to_redeem < 1",
+    "function": "apply_loyalty_points",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_new()",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.get('amended_from')",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not status",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 2",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.docstatus == 1",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_internal_transfer()",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "is_overdue(self, total)",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "0 < outstanding_amount < total",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "outstanding_amount > 0 and getdate(self.due_date) >= getdate()",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return == 0 and frappe.db.get_value('Sales Invoice', {'is_return': 1, 'return_against': self.name, 'docstatus': 1})",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return == 1",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "outstanding_amount <= 0",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.status in ('Unpaid', 'Partly Paid', 'Overdue') and self.is_discounted and (get_discounting_status(self.name) == 'Disbursed')",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "update",
+    "function": "set_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not self.has_subcontracted",
+    "function": "is_subcontracted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.has_subcontracted",
+    "function": "is_subcontracted",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.party_account_currency != doc.currency",
+    "function": "get_total_in_party_account_currency",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "outstanding_amount <= 0",
+    "function": "is_overdue",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.get('is_pos') or not doc.get('payment_schedule')",
+    "function": "is_overdue",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "status == 'Disbursed'",
+    "function": "get_discounting_status",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not party",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Sales Order']",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype == 'Sales Invoice'",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype == 'Purchase Invoice'",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "inter_company_reference",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.db.get_value(partytype, {'represents_company': doc.company}, 'name') != party",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.get_cached_value(ref_partytype, ref_party, 'represents_company') != company",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.db.get_value(partytype, {'name': party, internal: 1}, 'name') == party",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "company not in companies",
+    "function": "validate_inter_company_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Purchase Invoice']",
+    "function": "update_linked_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "inter_company_reference",
+    "function": "update_linked_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Purchase Invoice']",
+    "function": "unlink_inter_company_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "inter_company_reference",
+    "function": "unlink_inter_company_doc",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not account",
+    "function": "get_bank_cash_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Sales Order', 'Delivery Note']",
+    "function": "get_inter_company_details",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not parties",
+    "function": "get_inter_company_details",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not parties",
+    "function": "get_inter_company_details",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "len(parties) == 1",
+    "function": "get_internal_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.get('company_address') or doc.get('shipping_address')",
+    "function": "get_internal_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not party",
+    "function": "get_internal_party",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_inter_company_transaction",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not valid_price_list and (not doc.is_internal_transfer())",
+    "function": "validate_inter_company_transaction",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not party",
+    "function": "validate_inter_company_transaction",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "default_currency != doc.currency",
+    "function": "validate_inter_company_transaction",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Sales Order']",
+    "function": "make_inter_company_transaction",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "target_doc.doctype in ['Purchase Invoice', 'Purchase Order']",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.company_address and _validate_address_link(source_doc.company_address, 'Supplier', details.get('party'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.dispatch_address_name and _validate_address_link(source_doc.dispatch_address_name, 'Company', details.get('company'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.shipping_address_name and _validate_address_link(source_doc.shipping_address_name, 'Company', details.get('company'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.customer_address and _validate_address_link(source_doc.customer_address, 'Company', details.get('company'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "currency",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.supplier_address and _validate_address_link(source_doc.supplier_address, 'Company', details.get('company'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.shipping_address and _validate_address_link(source_doc.shipping_address, 'Customer', details.get('party'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.shipping_address and _validate_address_link(source_doc.shipping_address, 'Customer', details.get('party'))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "currency",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source.doctype == 'Purchase Order Item' and target.doctype == 'Sales Order Item'",
+    "function": "update_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source.get('purchase_order') and source.get('purchase_order_item') and (target.doctype == 'Purchase Invoice Item')",
+    "function": "update_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "(source.get('serial_no') or source.get('batch_no')) and (not source.get('serial_and_batch_bundle'))",
+    "function": "update_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype in ['Sales Invoice', 'Sales Order']",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source_doc.get('update_stock')",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "target_doctype == 'Sales Order'",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doctype == 'Purchase Order'",
+    "function": "get_received_items",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "target_doctypes",
+    "function": "get_received_items",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.is_internal_transfer()",
+    "function": "set_purchase_references",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.doctype == 'Purchase Receipt'",
+    "function": "set_purchase_references",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "so_item_map",
+    "function": "set_purchase_references",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.doctype == 'Purchase Invoice'",
+    "function": "set_purchase_references",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "list(dn_item_map.values())",
+    "function": "set_purchase_references",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "doc.update_stock",
+    "function": "update_pi_items",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not item.warehouse and item.get('purchase_order') and item.get('purchase_order_item')",
+    "function": "update_pi_items",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not item.warehouse and item.get('purchase_order') and item.get('purchase_order_item')",
+    "function": "update_pr_items",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.dn_detail",
+    "function": "get_sales_invoice_details",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "d.so_detail",
+    "function": "get_sales_invoice_details",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "customer.loyalty_program",
+    "function": "get_loyalty_programs",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "len(lp_details) == 1",
+    "function": "get_loyalty_programs",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not payment_mode",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "invalid_modes",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "invalid_modes == 1",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "dunning_type",
+    "function": "postprocess_dunning",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "letter_text",
+    "function": "postprocess_dunning",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "source.payment_schedule and len(source.payment_schedule) == 1",
+    "function": "postprocess_dunning",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "row.payment_schedule == source.payment_schedule[0].name",
+    "function": "postprocess_dunning",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not frappe.get_single_value('Accounts Settings', 'unlink_payment_on_cancellation_of_invoice')",
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "self.is_return and self.return_against",
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "payment_entries",
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "len(payment_entry.references) > 1",
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "links_to_pe",
+    "function": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "frappe.db.get_value('Currency', 'USD', 'smallest_currency_fraction_value') < 0.01",
+    "function": "test_sales_invoice_calculation_export_currency_with_tax_inclusive_price",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "validation_function",
+    "name": "validate_pos_gl_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "validate_without_change_gle",
+    "function": "validate_pos_gl_entry",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not frappe.db.exists('Item', '_Test Product Bundle Item New')",
+    "function": "test_bin_details_of_packed_item",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "expected_values.get(d.account_head)",
+    "function": "test_discount_on_net_total",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "round_off_gle",
+    "function": "test_rounding_adjustment_3",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "target_doc.doctype in ['Purchase Invoice', 'Purchase Order']",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "(address := target_doc.get(details[0]))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "(address := target_doc.get(details[0]))",
+    "function": null,
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "get_stock_balance('_Test Internal Transfer Item', 'Stores - TCP1', '2022-04-10')",
+    "function": "test_internal_transfer_gl_precision_issues",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not frappe.get_all('Accounting Dimension', filters={'document_type': 'Department'})",
+    "function": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not frappe.db.exists('Customer', '_Test Simple Customer')",
+    "function": "test_sales_invoice_without_customer_group_and_territory",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "(acc := frappe.db.exists('Account', {'account_name': 'Round Off for Opening', 'account_type': 'Round Off for Opening', 'company': company_name}))",
+    "function": "_create_opening_roundoff_account",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "args.posting_date",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "args.is_created_using_pos",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not args.pos_profile",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "si.update_stock and (args.get('batch_no') or args.get('serial_no'))",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "args.get('batch_no')",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not args.do_not_save",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not args.do_not_submit",
+    "function": "create_sales_invoice",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "args.posting_date",
+    "function": "create_sales_invoice_against_cost_center",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not args.do_not_save",
+    "function": "create_sales_invoice_against_cost_center",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not args.do_not_submit",
+    "function": "create_sales_invoice_against_cost_center",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "against_voucher_type == 'Purchase Invoice'",
+    "function": "get_outstanding_amount",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  },
+  {
+    "type": "conditional",
+    "condition": "not frappe.db.exists('Supplier', supplier_name)",
+    "function": "create_internal_supplier",
+    "file": "erpnext\\accounts\\doctype\\sales_invoice\\test_sales_invoice.py"
+  }
+]
